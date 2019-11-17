@@ -1,6 +1,5 @@
 sudo: required
-services:
-  - docker
+language: minimal
 env:
   global:
     - SHA=$(git rev-parse HEAD)
