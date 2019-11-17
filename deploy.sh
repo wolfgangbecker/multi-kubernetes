@@ -1,6 +1,6 @@
-docker build -t wolfgangbecker/multi-client:latest -t wolfgangbecker/multi-client:latest:$SHA -f ./client/Dockerfile ./client
-docker build -t wolfgangbecker/multi-server:latest -t wolfgangbecker/multi-server:latest:$SHA -f ./server/Dockerfile ./server
-docker build -t wolfgangbecker/multi-worker:latest -t wolfgangbecker/multi-worker:latest:$SHA -f ./worker/Dockerfile ./worker
+docker build -t wolfgangbecker/multi-client:latest -t wolfgangbecker/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t wolfgangbecker/multi-server:latest -t wolfgangbecker/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t wolfgangbecker/multi-worker:latest -t wolfgangbecker/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push wolfgangbecker/multi-client:latest
 docker push wolfgangbecker/multi-server:latest
